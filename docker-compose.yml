@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  hardhat-node:
+    build:
+      context: .
+      dockerfile: Dockerfile.hardhat
+    ports:
+      - "8545:8545"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - hardhat-node
