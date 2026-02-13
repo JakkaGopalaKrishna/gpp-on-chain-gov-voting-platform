@@ -1,0 +1,22 @@
+{
+  "name": "gpp-on-chain-gov-voting-platform",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test --no-compile",
+    "clean": "rm -rf cache artifacts node_modules",
+    "start": "echo 'Use docker-compose up to run services'"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.16.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.6.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "ethers": "^6.9.0",
+    "chai": "^4.3.7"
+  }
+}
